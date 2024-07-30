@@ -1,0 +1,11 @@
+<script>
+    let p = fetch("https://restcountries.com/v3.1/name/india")
+    p.then(function(response){
+        response.json().then(function (result){
+            console.log(result)
+        })
+    })
+    p.catch(function(error){
+        console.log(error.message)
+    })
+</script>

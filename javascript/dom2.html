@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulating Attributes Example</title>
+    <style>
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <a id="myLink" href="https://example.com">Visit Example.com</a>
+
+    <script>
+        // Accessing the <a> element by its id
+var myLink = document.getElementById('myLink');
+
+// Changing the href attribute
+myLink.setAttribute('href', 'https://newsite.com');
+
+// Getting the updated href attribute
+var hrefValue = myLink.getAttribute('href');document.write('Updated href:', hrefValue);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.header {
+            background-color: aliceblue;
+            text-align: center;
+            font-size: 30px;
+            padding: 20px 0;
+        }
+        .container {
+            width: 100%;
+            height: 90vh;
+            
+        }
+        .sidenav {
+            background-color: rgb(185, 185, 127);
+            width: 20%;
+            height: 100%;
+            vertical-align: top;
+        }
+        .sidenav ul {
+            list-style-type: none;
+           
+        }
+        .sidenav li {
+            padding: 17px 5px;
+            border: 1px solid white;
+            width: 100px;
+            text-align: center;
+        }
+        .sidenav li:hover {
+            background-color: white;
+            color: blue;
+            border-color: blue;
+            border-radius: 5px;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            width: 80%;
+            height: 100%;
+            vertical-align: top;
+            
+        }
+        

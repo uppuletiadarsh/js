@@ -1,0 +1,35 @@
+<form>
+    <div>
+        <table align="center" id="table">
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" id="uname" required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" id="psw" required></td>
+            </tr>
+            <tr>
+                <td>Dept:</td>
+                <td><input type="text" id="dept" required></td>
+            </tr>
+            <tr>
+                <td colspan="3"><input type="submit" id="forms"></td>
+            </tr>
+        </table>
+    </div>
+</form>
+
+<script>
+    document.getElementById('forms').addEventListener('click', function(event) {
+        var uname = document.getElementById("uname").value
+        var psw = document.getElementById("psw").value
+        var dept = document.getElementById("dept").value
+        document.write('Username: '+ uname ,'<br>')
+        document.write('Password: '+ psw ,'<br>')
+        document.write('Department: '+ dept ,'<br>')
+    })
+</script>
+<style>
+    
+</style>

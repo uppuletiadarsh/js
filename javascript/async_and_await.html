@@ -1,0 +1,16 @@
+<script>
+    async function some(){
+        console.log('inside the function')
+        var x = await 7 // it will print at last
+        return x
+        
+    }
+    
+    let p = some()
+    p.then(function(response){
+        console.log(response)
+
+    })
+    console.log('outside the loop')
+
+</script>

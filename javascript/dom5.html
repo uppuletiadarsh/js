@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic DOM Manipulation</title>
+</head>
+<body>
+    <div id="parent-container">
+        <p>I am a old text</p>
+       <button onclick="append()">Click me</button>
+    </div>
+
+    <script>
+        function append(){
+        // JavaScript code to dynamically create and append elements
+        const newElement = document.createElement('div');
+        newElement.textContent = 'Newly created div element';
+        
+        const parentElement = document.getElementById('parent-container');
+        parentElement.appendChild(newElement);
+        }
+
+        
+    </script>
+
+
+<!--another example-->>
+    <div id="parent-container">
+        <!-- Existing content or other elements -->
+    </div>
+
+    <script>
+        // JavaScript code to dynamically create and append elements
+        const newElement = document.createElement('div');
+        newElement.innerHTML = '<p>Hello, World!</p>';
+        
+        const parentElement = document.getElementById('parent-container');
+        parentElement.appendChild(newElement);
+    </script>
+</body>
+</html>

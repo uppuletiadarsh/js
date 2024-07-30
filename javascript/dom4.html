@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation Example - Changing Styles</title>
+    <style>
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Example 3: Changing Styles</h2>
+    <p id="myPara">Some text.</p>
+    <br>
+    <button onclick="changeStyle()">Change Style</button>
+    
+    <script>
+        function changeStyle() {
+            var myPara = document.getElementById('myPara');
+            myPara.style.color = 'blue';
+            myPara.style.fontWeight = 'bold';
+            myPara.classList.add('highlight');
+        }
+    </script>
+</body>
+</html>

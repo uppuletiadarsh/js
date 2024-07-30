@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            
+
+            function details() {
+                var Username = document.getElementById('uname').value
+                var Password = document.getElementById('psw').value
+                var output = document.getElementById('output');
+                output.innerHTML = "<h2> details:</h2>" +
+                                  "<p>Username: " + Username + "</p>" +
+                                  "<p>Password: " + Password + "</p>";
+            }
+        </script>
+        
+
+    </head>
+    <body>
+    <div >
+        <h1 align="center"> Skywaves software Pvt ltd</h1>
+        <form>
+        <table  align="center">
+            <tr>
+                <th> Username : </th>
+                <th id="uname"><input type="text" required></th>
+            </tr>
+            <tr>
+                <th> Password : </th>
+                <th id="psw"><input type="password" required></th>
+            </tr>
+            <tr>
+                <th colspan="2"> <input type="submit" onclick="details()"></th>
+            </tr>
+            
+    </table></form>
+    <div id="output" align="center"></div></div>
+    </body>
+</html>

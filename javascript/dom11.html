@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removing a Class Example</title>
+    <style>
+        .oldClass {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv" class="oldClass">
+        This is a div element.
+    </div>
+
+    <button onclick="removeClass()">Remove 'oldClass'</button>
+
+    <script>
+        function removeClass() {
+            const element = document.getElementById('myDiv');
+            element.classList.remove('oldClass');
+        }
+    </script>
+</body>
+</html>

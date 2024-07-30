@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Parent Node Example</title>
+</head>
+<body>
+    <div id="parent-container">
+        <div id="child-container">
+            <p>This is a child element.</p>
+        </div>
+        <!-- Other content or elements -->
+    </div>
+
+    <button onclick="accessParent()">Access Parent Element</button>
+
+    <script>
+        function accessParent() {
+            // Get child element
+            const childElement = document.getElementById('child-container');
+            
+            // Access parent node of the child element
+            const parentElement = childElement.parentNode;
+            
+            // Log parent element to console
+            console.log(parentElement);
+        }
+    </script>
+</body>
+</html>

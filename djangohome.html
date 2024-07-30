@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Specify your preferred font family */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2; /* Background color for the entire page */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+        }
+        .login-container {
+            background-color: #fff; /* White background for login container */
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Box shadow for a subtle elevation effect */
+            width: 300px;
+            text-align: center;
+        }
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333; /* Text color for headings */
+        }
+        .login-form input {
+            width: calc(100% - 20px);
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .login-form button {
+            background-color: #007bff; /* Button color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .login-form button:hover {
+            background-color: #0056b3; /* Darker shade of button color on hover */
+        }
+        .login-form p {
+            margin-top: 10px;
+        }
+        .login-form a {
+            color: #007bff; /* Link color */
+            text-decoration: none;
+        }
+        .login-form a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form class="login-form" action="#" method="POST">
+            <input type="text" name="username" placeholder="Username" required>
+            <br>
+            <input type="password" name="password" placeholder="Password" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#">Register</a></p>
+    </div>
+</body>
+</html>

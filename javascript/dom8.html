@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>childNodes Example</title>
+</head>
+<body>
+    <div id="parent-container">
+        <div>This is a child div.</div>
+        <p>This is a paragraph.</p>
+        Text node example
+    </div>
+
+    <button onclick="showChildNodes()">Show Child Nodes</button>
+
+    <script>
+        function showChildNodes() {
+            const parentElement = document.getElementById('parent-container');
+            const childNodes = parentElement.childNodes;
+            
+            // Logging child nodes to console
+            console.log(childNodes);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Manipulation Example - Changing Attributes</title>
+</head>
+<body>
+    <h2>Example 1: Changing Attributes</h2>
+    <a id="myLink" href="https://example.com">Visit Example.com</a>
+    <br><br>
+    <button onclick="changeLink()">Change Link Href</button>
+    <p>Current Href: <span id="hrefValue">https://example.com</span></p>
+    
+    <script>
+        function changeLink() {
+            var myLink = document.getElementById('myLink');
+            myLink.setAttribute('href', 'https://newsite.com');
+            var hrefValue = myLink.getAttribute('href');
+            document.getElementById('hrefValue').textContent = hrefValue;
+        }
+    </script>
+</body>
+</html>
